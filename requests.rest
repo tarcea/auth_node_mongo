@@ -1,0 +1,18 @@
+POST http://localhost:3000/api/user/register
+Content-Type: application/json
+
+{
+  "name": "GoguMarin",
+  "email": "gogud@gogu.com",
+  "password": "qwerty"
+}
+
+###
+
+POST http://localhost:3000/api/user/login
+Content-Type: application/json
+
+{
+  "email": "gogud@gogu.com",
+  "password": "qwerty"
+}
