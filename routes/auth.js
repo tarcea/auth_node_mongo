@@ -4,6 +4,12 @@ const { registerValidation, loginValidation } = require('../validation');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 
+// Get all users
+router.get('/', async (req, res) => {
+  const users = await User.find();
+  res.send(users);
+})
+
 // Register
 router.post('/register', async (req, res) => {
    // validate the data before making a user

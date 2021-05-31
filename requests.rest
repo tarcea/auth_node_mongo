@@ -16,3 +16,13 @@ Content-Type: application/json
   "email": "gogud@gogu.com",
   "password": "qwerty"
 }
+
+###
+
+GET http://localhost:3000/api/posts
+Content-Type: application/json,
+auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGIyYjM2N2I5ODJjOWQ4MDQzYzhkNjIiLCJpYXQiOjE2MjI0MDA0Mjd9.jDf9XPJ3y27yHYDNzoOmq5lVEkTrgdQ-FuINy6n4ySg
+
+### 
+
+GET http://localhost:3000/api/user
